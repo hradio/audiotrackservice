@@ -1,0 +1,17 @@
+<manifest package="eu.hradio.core.audiotrackservice"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application>
+    <service
+        android:exported="false"
+        android:enabled="true"
+        android:name="eu.hradio.core.audiotrackservice.AudiotrackService">
+        <intent-filter>
+            <action android:name="eu.hradio.core.audiotrackservice.AudiotrackService" />
+        </intent-filter>
+
+    </service>
+    </application>
+</manifest>
